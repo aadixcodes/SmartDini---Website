@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SMARTDINI Design System - Professional QR Food Ordering */
+
+@layer base {
+  :root {
+    /* SMARTDINI Brand Colors */
+    --background: 0 0% 92%; /* #EDE9E9 Light Gray */
+    --foreground: 0 0% 13%; /* Dark text */
+
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    --primary: 355 72% 46%; /* #CB212D Red */
+    --primary-foreground: 0 0% 100%; /* White text on red */
+
+    --secondary: 151 100% 37%; /* #00BF63 Green */
+    --secondary-foreground: 0 0% 100%; /* White text on green */
+
+    --muted: 0 0% 96%; /* Light muted */
+    --muted-foreground: 0 0% 45%; /* Muted text */
+
+    --accent: 151 100% 37%; /* Green accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 85%; /* Light borders */
+    --input: 0 0% 100%; /* White inputs */
+    --ring: 355 72% 46%; /* Red focus ring */
+
+    --radius: 0.75rem; /* More rounded for modern look */
+
+    /* Custom SMARTDINI tokens */
+    --brand-red: 355 72% 46%; /* #CB212D */
+    --brand-green: 151 100% 37%; /* #00BF63 */
+    --brand-white: 0 0% 100%; /* #FFFFFF */
+    --brand-gray: 0 0% 92%; /* #EDE9E9 */
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-red)), hsl(355 72% 55%));
+    --gradient-success: linear-gradient(135deg, hsl(var(--brand-green)), hsl(151 100% 45%));
+    --gradient-card: linear-gradient(135deg, hsl(var(--brand-white)), hsl(0 0% 98%));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
+    --shadow-elevated: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -2px hsl(0 0% 0% / 0.05);
+    --shadow-hero: 0 20px 25px -5px hsl(355 72% 46% / 0.25);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Dark mode support (optional) */
+  .dark {
+    --background: 0 0% 9%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 13%;
+    --card-foreground: 0 0% 95%;
+    --primary: 355 72% 46%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 151 100% 37%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 151 100% 37%;
+    --accent-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 355 72% 46%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+    font-feature-settings: "cv03", "cv04", "cv11";
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero button variant */
+  .btn-hero {
+    @apply bg-[hsl(var(--brand-red))] text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-[var(--shadow-hero)] hover:shadow-[var(--shadow-elevated)] hover:bg-[hsl(355_72%_40%)] transform hover:scale-105 transition-[var(--transition-bounce)];
+  }
+  
+  /* Success button variant */
+  .btn-success {
+    @apply bg-[hsl(var(--brand-green))] text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-[hsl(151_100%_32%)] transform hover:scale-105 transition-[var(--transition-bounce)];
+  }
+  
+  /* Card component */
+  .card-elevated {
+    @apply bg-white rounded-xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elevated)] transition-[var(--transition-smooth)] border border-[hsl(var(--border))];
+  }
+  
+  /* Feature card */
+  .feature-card {
+    @apply card-elevated p-6 hover:transform hover:scale-105 transition-[var(--transition-bounce)];
+  }
+  
+  /* Section padding */
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Animate on scroll */
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+  
+  .animate-on-scroll.in-view {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  /* Brand accent text */
+  .gradient-text {
+    @apply text-[hsl(var(--brand-red))] font-bold;
+  }
+}
