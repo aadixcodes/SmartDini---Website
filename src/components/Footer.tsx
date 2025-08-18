@@ -1,20 +1,22 @@
+
+
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-primary text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main footer content */}
-        <div className="py-16">
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div className="py-12 md:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-8">
             {/* Company Info */}
-            <div className="space-y-4">
+            <div className="text-center md:text-left space-y-4">
               <h3 className="text-2xl font-bold">SMARTDINI</h3>
-              <p className="text-white/80 leading-relaxed">
+              <p className="text-white/80 leading-relaxed max-w-md mx-auto md:mx-0">
                 Revolutionizing cafe operations with smart QR ordering technology. 
                 Serving over 500 cafes worldwide.
               </p>
-              <div className="flex space-x-4">
+              <div className="flex justify-center md:justify-start space-x-4">
                 <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">
                   <Facebook className="h-5 w-5" />
                 </a>
@@ -31,7 +33,7 @@ const Footer = () => {
             </div>
 
             {/* Quick Links */}
-            <div>
+            <div className="text-center md:text-left">
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-3">
                 <li>
@@ -63,7 +65,7 @@ const Footer = () => {
             </div>
 
             {/* Products */}
-            <div>
+            <div className="text-center md:text-left">
               <h4 className="text-lg font-semibold mb-4">Products</h4>
               <ul className="space-y-3">
                 <li>
@@ -95,27 +97,27 @@ const Footer = () => {
             </div>
 
             {/* Contact Info */}
-            <div>
+            <div className="text-center md:text-left">
               <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
               <div className="space-y-3">
-                <div className="flex items-center">
+                <div className="flex items-center justify-center md:justify-start">
                   <Mail className="h-5 w-5 mr-3 text-white/60" />
                   <span className="text-white/80">hello@smartdini.com</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center md:justify-start">
                   <Phone className="h-5 w-5 mr-3 text-white/60" />
                   <span className="text-white/80">+1 (555) 123-4567</span>
                 </div>
               </div>
               
-              {/* Newsletter */}
-              <div className="mt-6">
-                <h5 className="font-semibold mb-3">Stay Updated</h5>
-                <div className="flex">
+              {/* Newsletter - Fixed width to prevent overflow */}
+              <div className="mt-6 max-w-xs mx-auto md:mx-0">
+                <h5 className="font-semibold mb-3 text-center md:text-left">Stay Updated</h5>
+                <div className="flex w-full">
                   <input
                     type="email"
                     placeholder="Your email"
-                    className="flex-1 px-4 py-2 rounded-l-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-white/40"
+                    className="flex-1 min-w-0 px-4 py-2 rounded-l-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-white/40"
                   />
                   <button className="px-4 py-2 bg-secondary hover:bg-secondary/90 rounded-r-lg transition-colors">
                     <Mail className="h-5 w-5" />
@@ -127,12 +129,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/20 py-8">
+        <div className="border-t border-white/20 py-6 md:py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-white/60 text-sm">
               © 2024 SMARTDINI. All rights reserved.
             </div>
-            <div className="flex space-x-6 text-sm">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               <a href="#" className="text-white/60 hover:text-white transition-colors">
                 Privacy Policy
               </a>
