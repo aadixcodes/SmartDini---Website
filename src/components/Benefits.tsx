@@ -77,7 +77,7 @@ const Benefits = () => {
             >
               <div className="relative">
                 {/* Icon with gradient background */}
-                <div className={`w-16 h-16 ${benefit.color.split(' ')[0]} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
+                <div className={`w-16 h-16 bg-brand-red rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
                   <benefit.icon className="h-8 w-8 text-white" />
                 </div>
 
@@ -134,7 +134,7 @@ const Benefits = () => {
                 <div className="text-4xl mb-2">📈</div>
                 <h4 className="font-semibold text-lg">Join the Success</h4>
               </div>
-              <button className="btn-hero">
+              <button className="btn-hero py-2 px-4 text-md hover:scale-100">
                 Start Your Journey
               </button>
             </div>

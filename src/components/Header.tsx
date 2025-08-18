@@ -11,8 +11,8 @@ const Header = () => {
     <header className="bg-white shadow-lg border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
+          {/* Logo - Always visible */}
+          <div className="flex-shrink-0 z-50">
             <h1 className="text-2xl font-bold text-brand-red">SMARTDINI</h1>
           </div>
 
@@ -46,16 +46,13 @@ const Header = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex space-x-4">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-              Test Menu
-            </Button>
             <Button className="bg-primary text-white hover:bg-primary/90">
-              Test Admin Panel
+              Demo
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button - Always visible */}
+          <div className="md:hidden z-50">
             <Button
               variant="ghost"
               size="sm"
@@ -67,49 +64,47 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-border">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <a
-                href="#home"
-                className="block px-3 py-2 text-foreground hover:text-primary font-medium"
+        {/* Mobile Navigation - Full screen overlay */}
+        <div className={`md:hidden fixed inset-0 bg-white z-40 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 visible translate-y-16' : 'opacity-0 invisible translate-y-0'}`}>
+          <div className="flex flex-col items-center justify-center h-full py-10 px-4 space-y-8">
+            <a
+              href="#home"
+              className="text-2xl text-foreground hover:text-primary font-medium transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </a>
+            <a
+              href="#features"
+              className="text-2xl text-foreground hover:text-primary font-medium transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Features
+            </a>
+            <a
+              href="#pricing"
+              className="text-2xl text-foreground hover:text-primary font-medium transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Pricing
+            </a>
+            <a
+              href="#contact"
+              className="text-2xl text-foreground hover:text-primary font-medium transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </a>
+            <div className="pt-6 w-full max-w-xs">
+              <Button 
+                className="w-full bg-primary text-white hover:bg-primary/90 text-lg py-6"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
-              </a>
-              <a
-                href="#features"
-                className="block px-3 py-2 text-foreground hover:text-primary font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Features
-              </a>
-              <a
-                href="#pricing"
-                className="block px-3 py-2 text-foreground hover:text-primary font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Pricing
-              </a>
-              <a
-                href="#contact"
-                className="block px-3 py-2 text-foreground hover:text-primary font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </a>
-              <div className="flex flex-col space-y-2 px-3 pt-2">
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-                  Test Menu
-                </Button>
-                <Button className="bg-primary text-white hover:bg-primary/90">
-                  Test Admin Panel
-                </Button>
-              </div>
+                Request Demo
+              </Button>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </header>
   );

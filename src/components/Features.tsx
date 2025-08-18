@@ -134,7 +134,7 @@ const Features = () => {
                     Premium
                   </div>
                 )}
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <feature.icon className="h-6 w-6 text-white" />
                 </div>
                 <h4 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">{feature.title}</h4>

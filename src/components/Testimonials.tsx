@@ -128,8 +128,9 @@ const Testimonials = () => {
                 ))}
               </div>
 
-              <div className="mt-8">
-                <button className="btn-success">
+              <div className="mt-8 flex justify-center md:justify-start">
+
+                <button className="btn-success py-2 px-4 text-md">
                   Download Full Case Study
                 </button>
               </div>
@@ -137,17 +138,17 @@ const Testimonials = () => {
 
             {/* Image */}
             <div className="relative">
-              <img
-                src={happyCustomers}
-                alt="Happy cafe customers and staff"
-                className="rounded-xl shadow-lg w-full h-[400px] object-cover"
-              />
-              <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <div className="text-lg font-semibold">Real Results</div>
-                <div className="text-sm opacity-90">From Real Customers</div>
-              </div>
-            </div>
+  <img
+    src={happyCustomers}
+    alt="Happy cafe customers and staff"
+    className="rounded-xl shadow-lg w-full h-auto md:h-[400px] object-contain md:object-cover"
+  />
+  <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
+  <div className="absolute bottom-6 left-6 text-white">
+    <div className="text-lg font-semibold">Real Results</div>
+    <div className="text-sm opacity-90">From Real Customers</div>
+  </div>
+</div>
           </div>
         </div>
 

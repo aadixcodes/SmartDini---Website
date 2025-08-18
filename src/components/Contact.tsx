@@ -151,7 +151,7 @@ const Contact = () => {
           {/* Contact Info & Image */}
           <div className="space-y-8 animate-on-scroll" style={{animationDelay: "0.2s"}}>
             {/* Contact Details */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-border">
+            <div className="bg-white rounded-2xl px-8 py-5 shadow-lg border border-border">
               <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
               
               <div className="space-y-6">
@@ -177,7 +177,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                     <MapPin className="h-5 w-5 text-white" />
                   </div>
@@ -186,15 +186,15 @@ const Contact = () => {
                     <p className="text-muted-foreground">123 Innovation St, Tech City</p>
                     <p className="text-sm text-muted-foreground">San Francisco, CA 94107</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start">
                   <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                     <Clock className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Response Time</h4>
-                    <p className="text-muted-foreground">&lt; 24 hours</p>
+                    <h4 className="font-semibold">Support</h4>
+                    <p className="text-muted-foreground">24/7</p>
                     <p className="text-sm text-muted-foreground">Average demo scheduling time</p>
                   </div>
                 </div>
@@ -224,13 +224,13 @@ const Contact = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16 animate-on-scroll">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-border max-w-3xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-border max-w-7xl mx-auto">
             <h3 className="text-2xl font-semibold mb-4">Ready to Start Today?</h3>
             <p className="text-muted-foreground mb-6">
               Join over 500 cafes worldwide who have transformed their operations with SMARTDINI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-hero">
+              <button className="btn-hero py-2 px-4 text-sm">
                 Get Started Now
               </button>
               <Button variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-white">
