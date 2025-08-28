@@ -14,7 +14,7 @@ const testimonials = [
     name: "James Thompson",
     role: "Manager, The Coffee Hub",
     location: "London, UK", 
-    content: "The AI health analysis feature is incredible. Our health-conscious customers appreciate the personalized recommendations, and it's boosted our healthy options sales by 35%.",
+    content: "The AI health analysis feature is incredible. Our health-conscious customers appreciate the personalized recommendations.",
     rating: 5,
     stats: "35% increase in healthy sales"
   },
@@ -22,7 +22,7 @@ const testimonials = [
     name: "Sarah Kim",
     role: "Owner, Urban Bean",
     location: "Seoul, Korea",
-    content: "Best investment we've made! The multilingual support helped us serve international customers better. Staff efficiency improved by 50% since implementation.",
+    content: "Best investment we've made! The multilingual support helped us serve international customers better, and staff efficiency has improved significantly.",
     rating: 5,
     stats: "50% efficiency gain"
   }
@@ -155,7 +155,7 @@ const Testimonials = () => {
         {/* Bottom stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center animate-on-scroll">
           <div>
-            <div className="text-3xl font-bold text-primary">500+</div>
+            <div className="text-3xl font-bold text-secondary">500+</div>
             <div className="text-sm text-muted-foreground">Happy Cafes</div>
           </div>
           <div>
@@ -163,7 +163,7 @@ const Testimonials = () => {
             <div className="text-sm text-muted-foreground">Orders Processed</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-primary">4.9/5</div>
+            <div className="text-3xl font-bold text-secondary">4.9/5</div>
             <div className="text-sm text-muted-foreground">Average Rating</div>
           </div>
           <div>

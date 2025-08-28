@@ -142,31 +142,7 @@ const Pricing = () => {
         </div>
 
         {/* Additional info */}
-        <div className="grid md:grid-cols-3 gap-8 animate-on-scroll">
-          <div className="text-center">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-              <span className="text-white text-xl">🚀</span>
-            </div>
-            <h4 className="font-semibold mb-2">Quick Setup</h4>
-            <p className="text-sm text-muted-foreground">Get started in under 24 hours with our easy onboarding</p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4">
-              <span className="text-white text-xl">💝</span>
-            </div>
-            <h4 className="font-semibold mb-2">Free Migration</h4>
-            <p className="text-sm text-muted-foreground">We'll help you migrate from your existing system for free</p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-              <span className="text-white text-xl">🔒</span>
-            </div>
-            <h4 className="font-semibold mb-2">No Lock-in</h4>
-            <p className="text-sm text-muted-foreground">Cancel anytime with 30-day notice, keep your data</p>
-          </div>
-        </div>
+       
       </div>
     </section>
   );

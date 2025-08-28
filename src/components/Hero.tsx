@@ -24,7 +24,7 @@ const Hero = () => {
             {/* Stats */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-8 py-4">
               <div className="text-center min-w-[100px] md:min-w-0">
-                <div className="text-3xl font-bold text-primary">30%</div>
+                <div className="text-3xl font-bold text-secondary">30%</div>
                 <div className="text-sm text-muted-foreground">Faster Orders</div>
               </div>
               <div className="text-center min-w-[100px] md:min-w-0">
@@ -32,7 +32,7 @@ const Hero = () => {
                 <div className="text-sm text-muted-foreground">Less Wait Time</div>
               </div>
               <div className="text-center min-w-[100px] md:min-w-0">
-                <div className="text-3xl font-bold text-primary">95%</div>
+                <div className="text-3xl font-bold text-secondary">95%</div>
                 <div className="text-sm text-muted-foreground">Customer Satisfaction</div>
               </div>
             </div>

@@ -110,7 +110,7 @@ const Benefits = () => {
               {/* Mini stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">500+</div>
+                  <div className="text-2xl font-bold text-secondary">500+</div>
                   <div className="text-sm text-muted-foreground">Active Cafes</div>
                 </div>
                 <div className="text-center">
@@ -118,7 +118,7 @@ const Benefits = () => {
                   <div className="text-sm text-muted-foreground">Orders Processed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">98%</div>
+                  <div className="text-2xl font-bold text-secondary">98%</div>
                   <div className="text-sm text-muted-foreground">Uptime</div>
                 </div>
                 <div className="text-center">
