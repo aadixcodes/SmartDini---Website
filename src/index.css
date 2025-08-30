@@ -1,3 +1,16 @@
+/* Custom Font Import */
+@font-face {
+  font-family: 'ValleyZabira';
+  src: url('./fonts/ValleyZabiraDemo-Jpv47.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.smartdiniFont{
+  font-family: 'ValleyZabira', serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

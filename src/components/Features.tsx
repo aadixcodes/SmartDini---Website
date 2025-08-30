@@ -82,7 +82,7 @@ const Features = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             From basic QR ordering to advanced AI-powered recommendations, 
-            SMARTDINI grows with your business.
+            <span className="smartdiniFont">SMARTDINI</span> grows with your business.
           </p>
         </div>
 
@@ -149,7 +149,7 @@ const Features = () => {
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-border">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Why Choose SMARTDINI?</h3>
+                <h3 className="text-2xl  mb-4">Why Choose <span className="smartdiniFont">SMARTDINI</span>?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <div className="w-5 h-5 bg-secondary rounded-full flex items-center justify-center mr-3">

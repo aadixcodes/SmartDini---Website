@@ -16,7 +16,7 @@ const Hero = () => {
                 for Modern Cafes
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
-                Transform your cafe with SMARTDINI's contactless ordering system. 
+                Transform your cafe with <span className="smartdiniFont">SMARTDINI</span>'s contactless ordering system. 
                 Reduce wait times, increase efficiency, and deliver exceptional customer experiences.
               </p>
             </div>

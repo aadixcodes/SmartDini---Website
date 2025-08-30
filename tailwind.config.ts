@@ -20,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
+				valleyzabira: ['ValleyZabira', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

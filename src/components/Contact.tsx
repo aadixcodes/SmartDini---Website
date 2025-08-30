@@ -44,7 +44,7 @@ const Contact = () => {
             Ready to <span className="text-brand-red font-bold">Transform</span> Your Cafe?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get in touch with us to schedule a personalized demo and see how SMARTDINI can revolutionize your operations.
+            Get in touch with us to schedule a personalized demo and see how <span className="smartdiniFont">SMARTDINI</span> can revolutionize your operations.
           </p>
         </div>
 
@@ -227,7 +227,7 @@ const Contact = () => {
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-border max-w-7xl mx-auto">
             <h3 className="text-2xl font-semibold mb-4">Ready to Start Today?</h3>
             <p className="text-muted-foreground mb-6">
-              Join over 500 cafes worldwide who have transformed their operations with SMARTDINI.
+              Join over 500 cafes worldwide who have transformed their operations with <span className="smartdiniFont">SMARTDINI</span>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="btn-hero py-2 px-4 text-sm">

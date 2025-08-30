@@ -49,7 +49,7 @@ const Testimonials = () => {
             Loved by <span className="text-brand-red font-bold">Cafe Owners</span> Worldwide
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            See how SMARTDINI has transformed cafes across the globe with measurable results and happy customers.
+            See how <span className="smartdiniFont">SMARTDINI</span> has transformed cafes across the globe with measurable results and happy customers.
           </p>
         </div>
 

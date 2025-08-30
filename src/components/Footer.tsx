@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-8">
             {/* Company Info */}
             <div className="text-center md:text-left space-y-4">
-              <h3 className="text-2xl font-bold">SMARTDINI</h3>
+              <h3 className="text-2xl font-bold smartdiniFont">SMARTDINI</h3>
               <p className="text-white/80 leading-relaxed max-w-md mx-auto md:mx-0">
                 Revolutionizing cafe operations with smart QR ordering technology. 
                 Serving over 500 cafes worldwide.
@@ -132,7 +132,7 @@ const Footer = () => {
         <div className="border-t border-white/20 py-6 md:py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-white/60 text-sm">
-              © 2024 SMARTDINI. All rights reserved.
+              © 2024 <span className="smartdiniFont">SMARTDINI</span>. All rights reserved.
             </div>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               <a href="#" className="text-white/60 hover:text-white transition-colors">

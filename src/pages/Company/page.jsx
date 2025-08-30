@@ -12,8 +12,8 @@ const CompanyPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>About Astex - SmartDini</title>
-        <meta name="description" content="Learn about Astex, the company behind SmartDini - revolutionizing cafe operations with smart QR ordering technology." />
+        <title>About Astex - SMARTDINI</title>
+        <meta name="description" content="Learn about Astex, the company behind SMARTDINI - revolutionizing cafe operations with smart QR ordering technology." />
       </Helmet>
       <ScrollAnimations />
       <Header />
@@ -38,7 +38,7 @@ const CompanyPage = () => {
                 variants={textVariant(0.2)}
                 className="text-md md:text-lg text-gray-600 mb-10 max-w-2xl mx-auto"
               >
-                The innovative team behind SmartDini, revolutionizing the cafe industry
+                The innovative team behind <span className="smartdiniFont">SMARTDINI</span>, revolutionizing the cafe industry
               </motion.p>
               <motion.div variants={textVariant(0.3)}>
                 <Button 
@@ -76,7 +76,7 @@ const CompanyPage = () => {
                   Founded in 2018, Astex began with a simple mission: to solve the everyday challenges faced by cafe owners and enhance the customer experience through innovative technology.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
-                  What started as a small team of passionate tech enthusiasts and former cafe owners has grown into a global company serving over 500 cafes worldwide with our flagship product, SmartDini.
+                  What started as a small team of passionate tech enthusiasts and former cafe owners has grown into a global company serving over 500 cafes worldwide with our flagship product, <span className="smartdiniFont">SMARTDINI</span>.
                 </p>
                 <p className="text-lg text-muted-foreground">
                   Our journey has been driven by continuous innovation, customer feedback, and a deep understanding of the hospitality industry's unique challenges.
@@ -199,85 +199,86 @@ const CompanyPage = () => {
        
 
         {/* Mission & Values Section */}
-        <section className="py-20 md:py-28 bg-gray-50 ">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="max-w-4xl mx-auto mb-16 text-center"
-            >
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="w-8 h-0.5 bg-primary"></div>
-                <span className="text-sm font-medium tracking-wider text-primary uppercase">Our Values</span>
-                <div className="w-8 h-0.5 bg-primary"></div>
-              </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
-                What Guides <span className="text-primary">Our Work</span>
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                At Astex, we're guided by a set of core principles that shape everything we do.
-              </p>
-            </motion.div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Value 1 */}
-              <motion.div
-                variants={fadeIn('right', 'spring', 0.1, 1)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-muted"
-              >
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Innovation First</h3>
-                <p className="text-muted-foreground">
-                  We constantly push boundaries to create solutions that transform the cafe industry, making operations smoother and customer experiences better.
-                </p>
-              </motion.div>
-              
-              {/* Value 2 */}
-              <motion.div
-                variants={fadeIn('right', 'spring', 0.2, 1)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-muted"
-              >
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                  <Heart className="text-primary" size={24} />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Customer-Centric</h3>
-                <p className="text-muted-foreground">
-                  Every feature we develop starts with understanding our customers' needs. We listen, learn, and build solutions that truly matter.
-                </p>
-              </motion.div>
-              
-              {/* Value 3 */}
-              <motion.div
-                variants={fadeIn('right', 'spring', 0.3, 1)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-muted"
-              >
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                  <Zap className="text-primary" size={24} />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Simplicity</h3>
-                <p className="text-muted-foreground">
-                  We believe powerful technology should be easy to use. Our products are designed to be intuitive, accessible, and straightforward.
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+{/* Mission & Values Section */}
+<section className="py-20 md:py-28 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="max-w-4xl mx-auto mb-16 text-center"
+    >
+      <div className="flex items-center justify-center gap-3 mb-4">
+        <div className="w-8 h-0.5 bg-primary"></div>
+        <span className="text-sm font-medium tracking-wider text-primary uppercase">Our Values</span>
+        <div className="w-8 h-0.5 bg-primary"></div>
+      </div>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
+        What Guides <span className="text-primary">Our Work</span>
+      </h2>
+      <p className="text-lg text-muted-foreground">
+        At Astex, we're guided by a set of core principles that shape everything we do.
+      </p>
+    </motion.div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Value 1 */}
+      <motion.div
+        variants={fadeIn('right', 'spring', 0.1, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-muted"
+      >
+        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+        </div>
+        <h3 className="text-2xl font-bold mb-4 text-foreground">Innovation First</h3>
+        <p className="text-muted-foreground">
+          We constantly push boundaries to create solutions that transform the cafe industry, making operations smoother and customer experiences better.
+        </p>
+      </motion.div>
+      
+      {/* Value 2 */}
+      <motion.div
+        variants={fadeIn('right', 'spring', 0.2, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-muted"
+      >
+        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+          <Heart className="text-primary" size={28} />
+        </div>
+        <h3 className="text-2xl font-bold mb-4 text-foreground">Customer-Centric</h3>
+        <p className="text-muted-foreground">
+          Every feature we develop starts with understanding our customers' needs. We listen, learn, and build solutions that truly matter.
+        </p>
+      </motion.div>
+      
+      {/* Value 3 */}
+      <motion.div
+        variants={fadeIn('right', 'spring', 0.3, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-muted"
+      >
+        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+          <Zap className="text-primary" size={28} />
+        </div>
+        <h3 className="text-2xl font-bold mb-4 text-foreground">Simplicity</h3>
+        <p className="text-muted-foreground">
+          We believe powerful technology should be easy to use. Our products are designed to be intuitive, accessible, and straightforward.
+        </p>
+      </motion.div>
+    </div>
+  </div>
+</section>
 
         {/* Technology & Innovation Section */}
         <section className="py-20 md:py-28 bg-white mx-10">

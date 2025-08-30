@@ -121,7 +121,7 @@ const HowItWorks = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            How <span className="text-brand-red font-bold">SMARTDINI</span> Works
+            How <span className="text-brand-red pl-1 pr-1"><span className="smartdiniFont">SMARTDINI</span></span> Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Simple, fast, and intuitive. Get your QR ordering system up and running in minutes.
@@ -172,7 +172,7 @@ const HowItWorks = () => {
         <div className="text-center mt-16 animate-on-scroll">
           <div className="bg-white rounded-2xl p-8 border border-border shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">Ready to get started?</h3>
-            <p className="text-muted-foreground mb-6">Join hundreds of cafes already using SMARTDINI</p>
+            <p className="text-muted-foreground mb-6">Join hundreds of cafes already using <span className="smartdiniFont">SMARTDINI</span></p>
             <button className="btn-success">
               Start Free Trial
             </button>

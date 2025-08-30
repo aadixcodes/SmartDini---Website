@@ -62,7 +62,7 @@ const Benefits = () => {
             Transform Your <span className="text-brand-red font-bold">Cafe Experience</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            SMARTDINI delivers measurable improvements to your operations, 
+            <span className="smartdiniFont">SMARTDINI</span> delivers measurable improvements to your operations,
             customer satisfaction, and bottom line.
           </p>
         </div>
@@ -104,7 +104,7 @@ const Benefits = () => {
             <div className="lg:col-span-2">
               <h3 className="text-2xl font-semibold mb-4">Real Results from Real Cafes</h3>
               <p className="text-muted-foreground mb-6 text-lg">
-                See how SMARTDINI has transformed operations for cafes like yours across the globe.
+                See how <span className="smartdiniFont">SMARTDINI</span> has transformed operations for cafes like yours across the globe.
               </p>
               
               {/* Mini stats */}
@@ -144,7 +144,7 @@ const Benefits = () => {
         {/* Bottom testimonial */}
         <div className="mt-12 text-center animate-on-scroll">
           <blockquote className="text-xl italic text-muted-foreground max-w-3xl mx-auto">
-            "SMARTDINI transformed our cafe operations. We've seen a 40% increase in order accuracy 
+            "<span className="smartdiniFont">SMARTDINI</span> transformed our cafe operations. We've seen a 40% increase in order accuracy 
             and our customers love the seamless experience. Best investment we've made!"
           </blockquote>
           <div className="mt-4">

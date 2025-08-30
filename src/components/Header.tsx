@@ -35,7 +35,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0 z-50">
             <Link to="/">
-              <h1 className="text-2xl font-bold text-brand-red">SMARTDINI</h1>
+              <h1 className="text-3xl text-brand-red smartdiniFont">SMARTDINI</h1>
             </Link>
           </div>
 
@@ -43,31 +43,31 @@ const Header = () => {
           <nav className="hidden md:flex space-x-8">
             <Link
               to="/#home"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium "
             >
               Home
             </Link>
             <Link
               to="/#features"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium "
             >
               Features
             </Link>
             <Link
               to="/company"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium "
             >
               Company
             </Link>
             <Link
               to="/#pricing"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium "
             >
               Pricing
             </Link>
             <Link
               to="/#contact"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-foreground hover:text-primary transition-colors font-medium "
             >
               Contact
             </Link>
@@ -76,7 +76,7 @@ const Header = () => {
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex space-x-4">
             <Link to="/#contact">
-              <Button className="bg-primary text-white hover:bg-primary/90">
+              <Button className="bg-primary text-white hover:bg-primary/90 ">
                 Demo
               </Button>
             </Link>
@@ -100,42 +100,42 @@ const Header = () => {
           <div className="flex flex-col items-center justify-center h-[calc(100vh-64px)] mt-16 px-4 space-y-6">
             <Link
               to="/#home"
-              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3"
+              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3 "
               onClick={handleNavClick}
             >
               Home
             </Link>
             <Link
               to="/#features"
-              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3"
+              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3 "
               onClick={handleNavClick}
             >
               Features
             </Link>
             <Link
               to="/company"
-              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3"
+              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3 "
               onClick={handleNavClick}
             >
               Company
             </Link>
             <Link
               to="/#pricing"
-              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3"
+              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3 "
               onClick={handleNavClick}
             >
               Pricing
             </Link>
             <Link
               to="/#contact"
-              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3"
+              className="text-2xl text-foreground hover:text-primary font-medium transition-colors py-3 "
               onClick={handleNavClick}
             >
               Contact
             </Link>
             <div className="pt-4 w-full max-w-xs">
               <Link to="/#contact" onClick={handleNavClick}>
-                <Button className="w-full bg-primary text-white hover:bg-primary/90 text-lg py-4">
+                <Button className="w-full bg-primary text-white hover:bg-primary/90 text-lg py-4 ">
                   Request Demo
                 </Button>
               </Link>
